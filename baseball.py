@@ -16,7 +16,7 @@ class Team:
         # Prints the team's name, offensive, and defensive power.
         print(f'{self.name} : offensive power: {self.attack} / defensive power: {self.defence}')
 
-# Function to create teams and store them in the global `Teams` list.
+
 def create_teams():
     global Teams  # Access the global list of Teams.
     # Create three teams with different attack and defence values.
@@ -26,25 +26,25 @@ def create_teams():
     # Store the teams in the `Teams` list.
     Teams = [team1, team2, team3]
 
-# Function to display information about all teams.
+
 def show_teams():
     # Initialize a counter to display team numbers.
     team_number = 1
     print('Information of all teams:')
     # Loop through each team in the `Teams` list.
     for team in Teams:
-        # Print the current team number.
+      
         print(str(team_number))
         # Call the `info()` method to display the team's details.
         team.info()
-        # Increment the team number for the next iteration.
+       
         team_number += 1
 
-# Main function to create and display teams.
-def play():
-    print('Debug: play()')  # Debug message to indicate the play function is called.
-    create_teams()  # Create the teams.
-    show_teams()    # Show information for all teams.
 
-# Call the `play` function to execute the program.
+def play():
+    print('Debug: play()')  
+    create_teams()  
+    show_teams()    .
+
+
 play()
